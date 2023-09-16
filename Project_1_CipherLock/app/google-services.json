@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "91632455806",
+    "project_id": "cipherlock-2cc57",
+    "storage_bucket": "cipherlock-2cc57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91632455806:android:5a66f0654cbc59a55e082f",
+        "android_client_info": {
+          "package_name": "com.utkarsh.cipherlock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91632455806-ppnjd8q3hpq4ek8ej79ar367mopand7r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCioEFFLLZYY_92jY8eh4m6NMxbY4ccZTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91632455806-ppnjd8q3hpq4ek8ej79ar367mopand7r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

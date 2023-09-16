@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_dialog_height">900dp</dimen> <!-- Adjust the height as needed -->
+</resources>

@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/cipherlockbg"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:background="@drawable/whitebackground"
+        android:padding="30px"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="8dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/editTextWebsite"
+        android:layout_width="match_parent"
+        android:background="@drawable/whitebackground"
+        android:padding="30px"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/baseline_web_24"
+        android:drawablePadding="8dp"
+        android:hint="Website" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextWebsite"
+        android:background="@drawable/whitebackground"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="8dp"
+        android:padding="30px"
+        android:layout_marginTop="8dp"
+        android:hint="Password" />
+
+    <!-- Use a LinearLayout with horizontal orientation for the two ImageViews -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:orientation="horizontal"
+        android:id="@+id/buttonLayout"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="20px">
+
+        <ImageView
+            android:id="@+id/buttonSaveLocally"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle_border"
+            android:src="@drawable/mobile" />
+
+        <ImageView
+            android:id="@+id/buttonSaveToFirebase"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle_border"
+            android:src="@drawable/cloud" />
+    </LinearLayout>
+
+    <!-- RadioGroup now spans the whole width and uses proper spacing -->
+    <RadioGroup
+        android:id="@+id/radioGroupFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLayout"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:background="@drawable/whitebackground"
+        android:padding="30px"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="All Passwords" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLocal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Local Passwords" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFirebase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Firebase Passwords" />
+    </RadioGroup>
+
+    <!-- Add an ImageView for displaying an image when the ListView is empty -->
+    <ImageView
+        android:id="@+id/emptyListViewImage"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/radioGroupFilter"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_centerInParent="true"
+        android:src="@drawable/nopass"
+        android:visibility="gone" />
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/listViewPasswords"
+        android:layout_width="match_parent"
+        android:background="@drawable/whitebackground"
+        android:layout_height="match_parent"
+        android:padding="30px"
+        android:layout_below="@id/radioGroupFilter"
+        android:layout_marginTop="16dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+</RelativeLayout>

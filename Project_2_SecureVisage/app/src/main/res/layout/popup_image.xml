@@ -1,0 +1,41 @@
+<!-- res/layout/popup_image.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/secure"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/fullScreenImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/removeImageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/circle_border"
+        android:src="@drawable/minus" />
+
+    <ImageView
+        android:id="@+id/cancelImageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:background="@drawable/circle_border"
+        android:src="@drawable/cross" />
+</RelativeLayout>

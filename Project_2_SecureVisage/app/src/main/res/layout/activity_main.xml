@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center|top"
+    android:background="@drawable/secure"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/authenticateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="150dp"
+        android:onClick="authenticateWithBiometrics"
+        android:src="@drawable/authenticate" />
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authenticateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        android:padding="30px"
+        android:text="Click on the icon to authenticate"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/footerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        android:drawableLeft="@drawable/hello"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/background"
+        android:text="Developed by Utkarsh Mishra"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</RelativeLayout>

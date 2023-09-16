@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center|top"
+    android:background="@drawable/cipherlockbg"
+    tools:context=".StartupActivity">
+
+    <!-- Textview for welcome message -->
+    <TextView
+        android:drawableLeft="@drawable/baseline_emoji_people_24"
+        android:drawablePadding="8dp"
+        android:background="@drawable/whitebackground"
+        android:padding="30px"
+        android:id="@+id/welcomeMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/editTextUsernameLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:padding="30px"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="8dp"
+        android:background="@drawable/whitebackground"
+        android:layout_below="@id/welcomeMessageTextView"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:padding="30px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:background="@drawable/whitebackground"
+        android:id="@+id/editTextPasswordLogin"
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="8dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@id/editTextUsernameLogin"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/editTextPasswordLogin"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:id="@+id/editTextUsernameSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30px"
+        android:drawableLeft="@drawable/baseline_person_add_alt_1_24"
+        android:drawablePadding="8dp"
+        android:background="@drawable/whitebackground"
+        android:hint="Username"
+        android:visibility="gone"
+        android:layout_below="@id/welcomeMessageTextView"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:id="@+id/editTextPasswordSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="8dp"
+        android:inputType="textPassword"
+        android:padding="30px"
+        android:background="@drawable/whitebackground"
+        android:visibility="gone"
+        android:layout_below="@id/editTextUsernameSignup"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:id="@+id/buttonSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:visibility="gone"
+        android:layout_below="@id/editTextPasswordSignup"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

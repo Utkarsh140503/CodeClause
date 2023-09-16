@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/fitness"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/stepCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step Count: 0"
+        android:textSize="20sp"
+        android:background="@drawable/blackborder"
+        android:layout_marginBottom="60dp"
+        android:textColor="@color/white"
+        android:padding="60px"
+        android:drawableLeft="@drawable/run"
+        android:drawablePadding="10dp"
+        android:textStyle="bold" />
+
+    <!-- Horizontal LinearLayout for ImageView buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/resetButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/refresh"
+            android:background="@drawable/circle_border"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/showGraphButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/analysis"
+            android:background="@drawable/circle_border"
+            android:layout_marginLeft="10dp"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/showDistanceButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/distance"
+            android:background="@drawable/circle_border"
+            android:layout_marginLeft="10dp"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <!-- Define your LineChart here -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"/>
+
+</LinearLayout>

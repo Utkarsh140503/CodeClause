@@ -1,0 +1,18 @@
+<!-- res/layout/custom_graph_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/securevisagebg"
+    android:orientation="vertical">
+
+    <!-- Set layout_height to "0dp" and layout_weight to "1" to match the parent's size -->
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/customBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp" />
+
+    <!-- You can add other views or customize the layout as needed -->
+
+</LinearLayout>
